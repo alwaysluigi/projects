@@ -19,19 +19,47 @@ body {
 }
 header {
 font-size: 25px;
-height: 200px;
-background-image: url(../imgs/forest.jpeg);
+height: 50px;
+background-color: white;
 background-position: center;
 background-size: cover;
 position: relative;
+transition: 250ms all linear;
+overflow: hidden;
+width: 100%;
+}
+header:hover {
+    height: 100px;
+    background-color: #898989;
+    color: white;
+}
+header a {
+    border-radius: 10px;
+}
+.nav-list {
+    display: flex;
+    justify-content: center;
+    margin: 44px auto auto auto;
+    font-size: 20px;
+    list-style-type: none;}
+
+header:hover a{
+    color: white;
+    transition: 250ms all linear;
 
 }
+header a:hover {
+    background-color: maroon;
+}
+.nav-list a {
+    text-decoration: none;
+    color: black;
+    padding: 0 5px;
+  
+}
 .hello {
-    top: 50%;
     left: calc(50% - 92px);
-    position: absolute;
-    
-    
+    position: absolute;   
 }
 nav {
     display: flex;
@@ -70,4 +98,10 @@ ul {
 }
 h1, p {
     text-align: center;
+}
+.menu {
+    text-align: left;
+    margin: 0 10px;
+    float: left;
+    
 }
