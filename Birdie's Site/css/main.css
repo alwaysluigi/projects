@@ -64,7 +64,7 @@ ul {
     background-image: url(../imgs/mantis.jpeg);
 }
 .nav-li:hover {
-    box-shadow: 0 0 40px maroon ;
+    box-shadow: 0 0 40px black ;
     width: 175px;
     height: 175px;
 }
