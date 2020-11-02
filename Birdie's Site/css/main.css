@@ -1,6 +1,12 @@
+@font-face {
+    font-family: Oswald;
+    src: url(../fonts/Oswald-VariableFont_wght.ttf);
+
+}
 html, body {
     margin: 0;
     padding: 0;
+    font-family: Oswald, Arial, Helvetica, sans-serif;
 }
 body {
     background-color: #cbcbcb;
@@ -9,14 +15,59 @@ body {
     transform: scale(-1, 1);
 }
 .fa-crow {
-    color: lightcoral
+    color: maroon
 }
 header {
 font-size: 25px;
-text-align: center;
-border: 1px solid black;
+height: 200px;
+background-image: url(../imgs/forest.jpeg);
+background-position: center;
+background-size: cover;
+position: relative;
+
+}
+.hello {
+    top: 50%;
+    left: calc(50% - 92px);
+    position: absolute;
+    
+    
+}
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+ul {
+    padding-left: 0;
+
+}
+.nav-li {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    color: white;
+    transition-duration: 250ms;
+    transition-property: box-shadow, width, height;
+    background-position: center;
+    background-size: cover;
+    margin: 20px;
+    text-align: center;
+    border-radius: 25%;
 }
 
-.nav-divs {
-    
+.funny-vids {
+    background-image: url(../imgs/funny.jpeg);
+}
+.bugs {
+    background-image: url(../imgs/mantis.jpeg);
+}
+.nav-li:hover {
+    box-shadow: 0 0 40px maroon ;
+    width: 175px;
+    height: 175px;
+}
+h1, p {
+    text-align: center;
 }
