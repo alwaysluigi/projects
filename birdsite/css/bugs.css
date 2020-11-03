@@ -4,21 +4,39 @@
 
 }
 html, body {
-    margin: 0;
-    padding: 0;
     font-family: Oswald, Arial, Helvetica, sans-serif;
 }
 body {
-    background-color: #C6ACC8;
+    background-color: white;
+    margin-top: 70px
 }
 header {
-    text-align: center;
     height: 50px;
     background-color: white;
-    background-position: center center;
-    background-size: cover;
-    padding-top: 25px;
-    transition: 250ms all linear;
+    display: flex;
+    align-items: center;
+    border-bottom: #ccc 1px solid;
+    top: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    z-index: 5;
+}
+.nav-title {
+    flex: 0 1 60%;
+    order: 2;
+    text-align: center;
+}
+.homelink {
+    text-align: left;
+    order: 1;
+    flex: 0 1 20%;
+    padding-left: 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.homelink:hover {
+    text-decoration: underline;
 }
 ul {
     list-style-type: square;
@@ -28,10 +46,7 @@ ul {
 .cards p {
     padding-left: 20%;
 }
-header:hover {
-    height: 75px;
-    margin-bottom: 0;
-}
+
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -47,14 +62,14 @@ header:hover {
     width: 200px;
     height: 300px;
     border: 1px solid black;
-    background-color: lightcyan;
+    background-color: #e5e5e5;
     overflow: hidden;
     text-align: justify;
     margin-bottom: 10px;
     transition-property: box-shadow, opacity, transform;
     transition-duration: 1000ms;
     text-align: left;
-    border-radius: 10px;
+    border-radius: 5px;
     position: relative;
     font-size: 13px;
     margin-bottom: 25px;
@@ -89,4 +104,9 @@ img {
 .bugcard:hover .img1  {
     opacity: 0;
 
+}
+@media (max-width:700px) {
+    .bugcard {
+        transform: scale(.75);
+    }
 }

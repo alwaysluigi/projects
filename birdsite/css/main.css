@@ -9,53 +9,37 @@ html, body {
     font-family: Oswald, Arial, Helvetica, sans-serif;
 }
 body {
-    background-color: #cbcbcb;
+    padding-top: 80px;
+    background-color: #e5e5e5;
 }
-.crow1{
-    transform: scale(-1, 1);
-}
+
 .fa-crow {
     color: maroon
 }
 header {
-font-size: 25px;
-height: 50px;
-background-color: white;
-background-position: center;
-background-size: cover;
-position: relative;
-transition: 250ms all linear;
-overflow: hidden;
-width: 100%;
-}
-header:hover {
-    height: 100px;
-    background-color: #898989;
-    color: white;
-}
-header a {
-    border-radius: 10px;
-}
-.nav-list {
+    width: 100%;
+    height: 50px;
+    background-color: white;
     display: flex;
-    justify-content: center;
-    margin: 44px auto auto auto;
-    font-size: 20px;
-    list-style-type: none;}
-
-header:hover a{
-    color: white;
-    transition: 250ms all linear;
-
+    align-items: center;
+    border-bottom: #ccc 1px solid;
+    top: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    z-index: 5;
 }
-header a:hover {
-    background-color: maroon;
+.hello {
+    flex: 0 1 60%;
 }
-.nav-list a {
+.buglink {
     text-decoration: none;
+    box-sizing: border-box;
+    padding: 0 20px;
     color: black;
-    padding: 0 5px;
-  
+}
+.buglink:hover {
+    text-decoration: underline;
 }
 .hello {
     left: calc(50% - 92px);
@@ -105,3 +89,4 @@ h1, p {
     float: left;
     
 }
+
