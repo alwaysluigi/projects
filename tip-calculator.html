@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+</head>
+<body>
+<div class="tipcalc">
+    <div class="row">
+        <div class="col-sm-12">
+<h1>Tip Calculator</h1>
+        </div>
+    </div>
+    <div id=buttons>
+        <label for="billAmount" class="col1">Bill Amount (in dollars)</label>
+        <input type="number" class="bill-amount" id="billAmount" placeholder="example: 52.29">
+    </div>
+    <div class="tip-percent"></div>
+    <label for="tipAmount" class="col2">Tip Amount (as a %)</label>
+    <input type="number" class="tip-amount" id="tipAmount" placeholder="example: 20">
+</div>
+<div>
+    
+</div>
+<div class="calculate-btn">
+    <button id="calculate" onclick="totalTip()">Calculate Tip and Total Bill</button>
+</div>
+<div id="billTotal">Total Tip: <span class="tipSpan"></span></div>
+<div class="total">Total Bill with Tip: <span class="totalWithTip"></span></div>
+<style>
+    .total {
+        margin-top: 10px;
+    }
+    input {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    #billTotal {
+        margin-top: 10px;
+    }
+    #calculate {
+        margin-top: 10px;
+    }
+    button {
+        background-color: lightblue;
+        color: black;
+    }
+    /* body  {
+        text-align: center;
+    } */
+</style>
+<script>
+  
+    function totalTip() {
+        var billAmount = Number(document.getElementById("billAmount").value);
+        var tipAmount = Number(document.getElementById("tipAmount").value);
+        tipAmount = tipAmount / 100;
+        var tbt = billAmount * tipAmount;
+        document.querySelector(".tipSpan").innerHTML = tbt.toFixed(2);
+        var bwt = billAmount + tbt;
+        document.querySelector(".totalWithTip").innerHTML = bwt.toFixed(2);
+    }
+ 
+    
+    </script>
+</body>
+</html>
