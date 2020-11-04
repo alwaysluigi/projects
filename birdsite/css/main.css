@@ -33,11 +33,20 @@ header {
     z-index: 5;
 }
 .nav-title {
-    flex: 0 1 80%;
+    flex: 0 1 25%;
+    order: 1;
+    text-align: left;
+}
+.maintitle {
+    flex: 0 1 100%;
     order: 2;
-    text-align: center;
+    text-align: right;
+    box-sizing: border-box;
+    padding-right: 10px;
+    
 }
 .pagelink {
+    justify-content: left;
     order: 1;
     padding: 0 20px;
     color: black;

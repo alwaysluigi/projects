@@ -13,6 +13,8 @@ body {
     background-color: white;
     margin-top: 70px
 }
+
+
 header {
     height: 50px;
     background-color: white;
@@ -35,6 +37,7 @@ header {
 .homelink {
     text-align: left;
     order: 1;
+
     padding: 0 20px;
     box-sizing: border-box;
     text-decoration: none;
@@ -50,7 +53,7 @@ header {
     display: flex;
     vertical-align: center;
 }
-.birdname {
+.reptilename {
     text-decoration: underline;
     font-family: 'Neue', Arial, Helvetica, sans-serif;
     font-size: 24px;
@@ -59,15 +62,14 @@ header {
     position: relative;
     font-size: 20px;
 }
-
-.bird-img {
+.reptile-img {
     padding: 0 10px;
     height: 500px;
     width: 500px;
     object-fit: cover;
     transition-duration: 500ms;
     opacity: 1;
- 
+    border-radius: 9%;
 }
 .middle {
     transition: .5s ease;
@@ -79,18 +81,18 @@ header {
     -ms-transform: translate(-50%, -50%);
     text-align: center;
   }
-.container:hover .bird-img{
-    opacity: .3;
+.container:hover .reptile-img{
+    opacity: .4;
 }
 .container:hover .middle {
     opacity: 1;
 }
 
-@media screen (max-width:425){
-    .bird-img {
-        width: 300px;
-        height: 300px;
-    }
+@media (max-width:425){
+.reptile-img {
+   height: auto;
+   width: 100%;
+}
     .container {
         font-size: 12px;
     }
