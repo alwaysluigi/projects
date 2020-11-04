@@ -17,7 +17,6 @@ body {
     color: maroon
 }
 header {
-    width: 100%;
     height: 50px;
     background-color: white;
     display: flex;
@@ -29,16 +28,20 @@ header {
     position: fixed;
     z-index: 5;
 }
-.hello {
-    flex: 0 1 60%;
+.nav-title {
+    flex: 0 1 80%;
+    order: 2;
+    text-align: center;
 }
-.buglink {
-    text-decoration: none;
-    box-sizing: border-box;
+.pagelink {
+    order: 1;
     padding: 0 20px;
     color: black;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: left;
 }
-.buglink:hover {
+.pagelink:hover {
     text-decoration: underline;
 }
 .hello {
@@ -53,6 +56,9 @@ nav {
 ul {
     padding-left: 0;
 
+}
+.birdname {
+    text-decoration: underline;
 }
 .nav-li {
     display: inline-block;
@@ -90,3 +96,11 @@ h1, p {
     
 }
 
+@media (max-width: 700px) {
+    .pagelink {
+        font-size: 12px;
+    }
+    .nav-title {
+        font-size: 14px;
+    }
+}
