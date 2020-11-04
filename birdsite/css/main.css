@@ -29,19 +29,18 @@ header {
     z-index: 5;
 }
 .nav-title {
-    flex: 0 1 60%;
+    flex: 0 1 75%;
     order: 2;
     text-align: center;
 }
-.buglink {
+.pagelink {
     order: 1;
-    flex: 0 1 20%;
-    padding: 0 20px;
+    padding: 0 30px;
     color: black;
     box-sizing: border-box;
     text-decoration: none;
 }
-.buglink:hover {
+.pagelink:hover {
     text-decoration: underline;
 }
 .hello {
@@ -94,7 +93,7 @@ h1, p {
 }
 
 @media (max-width: 700px) {
-    .buglink {
+    .pagelink {
         font-size: 12px;
     }
     .nav-title {
