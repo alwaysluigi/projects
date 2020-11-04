@@ -1,7 +1,10 @@
 @font-face {
     font-family: Oswald;
     src: url(../fonts/Oswald-VariableFont_wght.ttf);
-
+}
+@font-face {
+    font-family: Neue;
+    src: url(../fonts/BebasNeue-Regular.ttf);
 }
 html, body {
     font-family: Oswald, Arial, Helvetica, sans-serif;
@@ -46,6 +49,11 @@ header {
     display: flex;
     vertical-align: center;
 }
+.birdname {
+    text-decoration: underline;
+    font-family: 'Neue', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
 .container {
     position: relative;
     font-size: 20px;
@@ -57,7 +65,7 @@ header {
     object-fit: cover;
     transition-duration: 500ms;
     opacity: 1;
-
+ 
 }
 .middle {
     transition: .5s ease;
