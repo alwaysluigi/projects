@@ -109,6 +109,10 @@ max-height: 700px;
     }
     .nav-title {
         font-size: 14px;
+    }  
+      video {
+        max-height: 320px;
+        max-width: 320px;
     }
 }
 @media (max-width: 320px) {
@@ -116,4 +120,5 @@ max-height: 700px;
         max-height: 320px;
         max-width: 320px;
     }
+
 }
