@@ -114,10 +114,10 @@ max-height: 700px;
 
 @media (max-width: 700px) {
     .pagelink {
-        font-size: 12px;
+        font-size: 9px;
     }
     .nav-title {
-        font-size: 8px;
+        font-size: 12px;
     }  
     video {
         max-height: 320px;

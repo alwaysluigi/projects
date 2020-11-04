@@ -87,10 +87,10 @@ header {
     opacity: 1;
 }
 
-@media (max-width:425){
+@media only screen and (max-width: 600px){
 .reptile-img {
-   height: auto;
-   width: 100%;
+   height: 300px;
+   width: 300px;
 }
     .container {
         font-size: 12px;
