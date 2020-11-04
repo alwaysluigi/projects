@@ -29,16 +29,17 @@ header {
     z-index: 5;
 }
 .nav-title {
-    flex: 0 1 75%;
+    flex: 0 1 80%;
     order: 2;
     text-align: center;
 }
 .pagelink {
     order: 1;
-    padding: 0 30px;
+    padding: 0 20px;
     color: black;
     box-sizing: border-box;
     text-decoration: none;
+    text-align: left;
 }
 .pagelink:hover {
     text-decoration: underline;

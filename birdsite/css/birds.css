@@ -57,7 +57,7 @@ header {
     object-fit: cover;
     transition-duration: 500ms;
     opacity: 1;
-    object-position: center;    
+
 }
 .middle {
     transition: .5s ease;
