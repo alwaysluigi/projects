@@ -11,8 +11,12 @@ html, body {
 body {
     padding-top: 80px;
     background-color: #e5e5e5;
+    text-align: center;
+    
 }
-
+.vid-details {
+    color: #999;
+}
 .fa-crow {
     color: maroon
 }
@@ -57,9 +61,7 @@ ul {
     padding-left: 0;
 
 }
-.birdname {
-    text-decoration: underline;
-}
+
 .nav-li {
     display: inline-block;
     width: 150px;
@@ -95,7 +97,12 @@ h1, p {
     float: left;
     
 }
-
+video {
+display: block;
+margin: 0 auto;
+max-width: 700px;
+max-height: 700px;
+}
 @media (max-width: 700px) {
     .pagelink {
         font-size: 12px;
