@@ -31,7 +31,7 @@ header {
     text-align: left;
     order: 1;
     flex: 0 1 20%;
-    padding-left: 20px;
+    padding: 0 20px;
     box-sizing: border-box;
     text-decoration: none;
 }
@@ -107,6 +107,6 @@ img {
 }
 @media (max-width:700px) {
     .bugcard {
-        transform: scale(.75);
+        transform: scale(.9);
     }
 }

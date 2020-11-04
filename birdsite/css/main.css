@@ -17,7 +17,6 @@ body {
     color: maroon
 }
 header {
-    width: 100%;
     height: 50px;
     background-color: white;
     display: flex;
@@ -29,14 +28,18 @@ header {
     position: fixed;
     z-index: 5;
 }
-.hello {
+.nav-title {
     flex: 0 1 60%;
+    order: 2;
+    text-align: center;
 }
 .buglink {
-    text-decoration: none;
-    box-sizing: border-box;
+    order: 1;
+    flex: 0 1 20%;
     padding: 0 20px;
     color: black;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 .buglink:hover {
     text-decoration: underline;
@@ -90,3 +93,11 @@ h1, p {
     
 }
 
+@media (max-width: 700px) {
+    .buglink {
+        font-size: 12px;
+    }
+    .nav-title {
+        font-size: 14px;
+    }
+}
