@@ -33,9 +33,11 @@ header {
     z-index: 5;
 }
 .nav-title {
-    flex: 0 1 25%;
+    flex: 0 1 50%;
     order: 1;
     text-align: left;
+    box-sizing: border-box;
+    padding: 0 3px;
 }
 .maintitle {
     flex: 0 1 100%;
@@ -48,7 +50,7 @@ header {
 .pagelink {
     justify-content: left;
     order: 1;
-    padding: 0 20px;
+    padding: 0 3px;
     color: black;
     box-sizing: border-box;
     text-decoration: none;
@@ -57,10 +59,7 @@ header {
 .pagelink:hover {
     text-decoration: underline;
 }
-.hello {
-    left: calc(50% - 92px);
-    position: absolute;   
-}
+
 nav {
     display: flex;
     justify-content: center;
@@ -112,17 +111,19 @@ margin: 0 auto;
 max-width: 700px;
 max-height: 700px;
 }
+
 @media (max-width: 700px) {
     .pagelink {
         font-size: 12px;
     }
     .nav-title {
-        font-size: 14px;
+        font-size: 8px;
     }  
-      video {
+    video {
         max-height: 320px;
         max-width: 320px;
     }
+
 }
 @media (max-width: 320px) {
     video {
@@ -130,4 +131,12 @@ max-height: 700px;
         max-width: 320px;
     }
 
+    .maintitle {
+        font-size: 12px;
+        flex: 1 1 25%;
+    }  
+    .pagelink {
+        font-size: 8px;
+        flex: 0 1 100%;
+    }
 }
