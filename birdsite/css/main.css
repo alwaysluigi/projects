@@ -12,6 +12,7 @@ body {
     padding-top: 80px;
     background-color: #e5e5e5;
     text-align: center;
+    overflow: auto;
     
 }
 
@@ -22,7 +23,6 @@ body {
     border-bottom: 1px solid #ccc;
     border-top: 1px solid #ccc;
     width: 100%;
-    margin-left: 10px;
     word-wrap: normal;
     overflow-y: auto;
     overflow-x: hidden;
