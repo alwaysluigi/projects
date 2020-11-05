@@ -71,6 +71,7 @@ header {
     box-sizing: border-box;
     text-decoration: none;
     text-align: left;
+    border-right: solid #222 1px;
 }
 .pagelink:hover {
     text-decoration: underline;
