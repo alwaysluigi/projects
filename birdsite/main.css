@@ -13,7 +13,7 @@ html {
 }
 body {
     padding-top: 80px;
-    background: linear-gradient(#ddd, #888);
+    background: #eee;
     text-align: center;
     overflow: auto;
 }
@@ -127,7 +127,15 @@ display: block;
 margin: 0 auto;
 max-width: 700px;
 max-height: 700px;
+margin-bottom: 10px;
 }
+footer {
+    height: 100px;
+    width: 100%;
+}
+
+
+
 @media (max-width: 700px) {
     .pagelink {
         font-size: 9px;
