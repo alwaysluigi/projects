@@ -1,12 +1,12 @@
 @font-face {
     font-family: Oswald;
     src: url(../fonts/Oswald-VariableFont_wght.ttf);
-
 }
+
 html, body {
     margin: 0;
     padding: 0;
-    font-family: Oswald, Arial, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
 }
 html {
     height: 100%;
@@ -16,9 +16,10 @@ body {
     background: linear-gradient(#ddd, #888);
     text-align: center;
     overflow: auto;
-    /* background: #e5e5e5; */
 }
-
+.welcome1 {
+    font-family: 'Permanent Marker', cursive;
+}
 .vid-details {
     color: #999;
 }
@@ -29,12 +30,13 @@ body {
     word-wrap: normal;
     overflow-y: auto;
     overflow-x: hidden;
+    color: #F94848;
     ;
 }
 .newinfo {
     font-size: 14px;
     font-weight: normal;
-
+    color: black;
 }
 .fa-crow {
     color: maroon
@@ -64,7 +66,6 @@ header {
     text-align: right;
     box-sizing: border-box;
     padding-right: 10px;
-    
 }
 .pagelink {
     justify-content: left;
@@ -79,7 +80,6 @@ header {
 .pagelink:hover {
     text-decoration: underline;
 }
-
 nav {
     display: flex;
     justify-content: center;
@@ -89,7 +89,6 @@ ul {
     padding-left: 0;
 
 }
-
 .nav-li {
     display: inline-block;
     width: 150px;
@@ -104,7 +103,6 @@ ul {
     text-align: center;
     border-radius: 25%;
 }
-
 .funny-vids {
     background-image: url(../imgs/funny.jpeg);
 }
@@ -123,7 +121,6 @@ h1, p {
     text-align: left;
     margin: 0 10px;
     float: left;
-    
 }
 video {
 display: block;
@@ -131,7 +128,6 @@ margin: 0 auto;
 max-width: 700px;
 max-height: 700px;
 }
-
 @media (max-width: 700px) {
     .pagelink {
         font-size: 9px;
