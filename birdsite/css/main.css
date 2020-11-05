@@ -14,8 +14,24 @@ body {
     text-align: center;
     
 }
+
 .vid-details {
     color: #999;
+}
+.new {
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    margin-left: 10px;
+    word-wrap: normal;
+    overflow-y: auto;
+    overflow-x: hidden;
+    ;
+}
+.newinfo {
+    font-size: 14px;
+    font-weight: normal;
+
 }
 .fa-crow {
     color: maroon
