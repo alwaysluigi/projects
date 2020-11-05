@@ -67,6 +67,7 @@ header {
     object-fit: cover;
     transition-duration: 500ms;
     opacity: 1;
+    border-radius: 9%;
  
 }
 .middle {
